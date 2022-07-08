@@ -1,5 +1,5 @@
 # Site Settings
-baseurl: "/Grape-Academic-Theme"
+baseurl: "https://kanishkamanna.github.io"
 
 # Blog Setting
 blog: True
@@ -8,10 +8,10 @@ blog: True
 lang: en
 
 # Search engine optimization settings
-title: Grape Academic Theme
+title: Kanishka Manna
 tagline: A jekyll theme for academic portfolios
 description: The demonstration page for the Grape Academic Theme, a jekyll theme for academic portfolios based on the Grape Theme.
-author: Christoph Jabs (chrjabs)
+author: Kanishka Manna (kanishkamanna)
 twitter:
   username: chrjabs
   card: A jekyll theme for academic portfolios
