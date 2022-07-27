@@ -10,8 +10,12 @@ interests: # Remove for hiding the interests section
   - Interest 1
   - Interest 2
 skills: # Remove for hiding the skills section
-  - skill: HTML5 & CSS
-    value: 85  # Percent value
+  - skill: Python
+  - skill: R
+  - skill : Data Science
+  - skill: Data Engineering
+  - skill: Spanish
+  - skill: SQL
 social:
   email:  # Full email address, e.g. "sample@google.com"
   orcid: 
