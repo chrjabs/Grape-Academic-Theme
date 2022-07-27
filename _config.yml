@@ -1,6 +1,5 @@
 # Site Settings
-baseurl: "/Grape-Academic-Theme"
-
+baseurl: ""
 # Features Setting
 # Turn subpages on or off
 publications: True
