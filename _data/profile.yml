@@ -16,6 +16,8 @@ skills: # Remove for hiding the skills section
   - skill: Data Engineering
   - skill: Spanish
   - skill: SQL
+  - skill: AB Testing 
+  - skill: Technical Writing
 social:
   email:  # Full email address, e.g. "sample@google.com"
   orcid: 
