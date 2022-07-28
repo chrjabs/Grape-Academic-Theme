@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-# Publish to github pages on gh-pages branch
+Publish to github pages on gh-pages branch
 
 if [ -n "$(git status --porcelain)" ]; then
   echo "Please commit all changes before publishing with this script"
