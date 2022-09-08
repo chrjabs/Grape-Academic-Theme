@@ -11,10 +11,10 @@ blog: True
 lang: en
 
 # Search engine optimization settings
-title: Grape Academic Theme
+title: (블로그 공사중...)
 tagline: A jekyll theme for academic portfolios
 description: The demonstration page for the Grape Academic Theme, a jekyll theme for academic portfolios based on the Grape Theme.
-author: Christoph Jabs (chrjabs)
+author: 김민욱
 twitter:
   username: chrjabs
   card: A jekyll theme for academic portfolios
@@ -45,7 +45,7 @@ paginate_path: "blog/page:num"
 sass:
   sass_dir: _sass
   style: :compressed
-plugins: ['jekyll-paginate', 'jekyll/scholar', 'jekyll-seo-tag']
+plugins: ["jekyll-paginate", "jekyll/scholar", "jekyll-seo-tag"]
 bootstrap:
   assets: true
 
@@ -60,7 +60,21 @@ scholar:
   sort_by: year,month
   order: descending,ascending
 
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website] # Filter out certain bibtex entry keywords used internally from the bib output
+filtered_bibtex_keywords: [
+    abbr,
+    abstract,
+    arxiv,
+    bibtex_show,
+    html,
+    pdf,
+    selected,
+    supp,
+    blog,
+    code,
+    poster,
+    slides,
+    website,
+  ] # Filter out certain bibtex entry keywords used internally from the bib output
 
 academicons:
   version: "1.9.1"
