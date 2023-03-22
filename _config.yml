@@ -20,7 +20,7 @@ twitter:
   card: A jekyll theme for academic portfolios
 logo: /assets/img/smile.png
 social:
-  name: Christoph Jabs
+  name: HAKBIN LEE
   links:
     - https://twitter.com/chrjabs
     - https://github.com/Dayy9984
@@ -28,7 +28,7 @@ locale: en_GB
 
 # Page Settings
 theme_settings:
-  title: Grape Academic Theme
+  title: HAKBIN LEE
 
   experience_title: EXPERIENCE
   interests_title: RESEARCH INTERESTS
