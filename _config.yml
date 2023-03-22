@@ -14,7 +14,7 @@ lang: en
 title: Grape Academic Theme
 tagline: A jekyll theme for academic portfolios
 description: The demonstration page for the Grape Academic Theme, a jekyll theme for academic portfolios based on the Grape Theme.
-author: Christoph Jabs (chrjabs)
+author: HAKBIN LEE (Dayy9984)
 twitter:
   username: chrjabs
   card: A jekyll theme for academic portfolios
@@ -23,7 +23,7 @@ social:
   name: Christoph Jabs
   links:
     - https://twitter.com/chrjabs
-    - https://github.com/chrjabs
+    - https://github.com/Dayy9984
 locale: en_GB
 
 # Page Settings
