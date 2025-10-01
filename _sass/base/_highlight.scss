@@ -1,3 +1,5 @@
+@use "variable" as vars;
+
 .highlight pre { 
     padding: 10px; 
     overflow: auto;
@@ -71,8 +73,8 @@
 
 
 // http://jwarby.github.io/jekyll-pygments-themes/languages/python.html 
-.highlight pre { background-color: $background-gray; }
-.highlight .hll { background-color: $background-gray; }
+.highlight pre { background-color: vars.$background-gray; }
+.highlight .hll { background-color: vars.$background-gray; }
 .highlight .c { color: #008800; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { color: #000080; font-weight: bold } /* Keyword */

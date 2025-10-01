@@ -1,3 +1,5 @@
+@use "../base/variable" as vars;
+
 #post{
     @extend %page-padding;
     .post-header{
@@ -10,7 +12,7 @@
             font-size : 1.2rem;
         }
         .meta{
-            color : $text-gray;
+            color : vars.$text-gray;
             font-size: 0.85rem;
             margin-top : 15px;
         }
@@ -36,26 +38,26 @@
     position:fixed;
     bottom:10%;
     right: 15%;
+    width: 45px;
+    height: 45px;
+    background-color: vars.$theme-dark;
+    color : rgba(0,0,0,0.7);
+    border-radius: 15px;
+    text-align: center;
+    line-height: 2.4rem;
+    color:#fff;
     @media (max-width: 991px) {
         right: 10%;
     }
     @media (max-width: 576px) {
         right: 2%;
     }
-    width: 45px;
-    height: 45px;
-    background-color: $theme-dark;
-    color : rgba(0,0,0,0.7);
-    border-radius: 15px;
-    text-align: center;
-    line-height: 2.4rem;
-    color:#fff;
     i {
         color:#fff;
     }
 }
 .top-btn:hover{
-    background-color: $theme-dark2;
+    background-color: vars.$theme-dark2;
 }
 
 #comments{

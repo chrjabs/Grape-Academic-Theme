@@ -4,7 +4,9 @@
     date: 05/2022
     comment: This is some comment text that can do _Markdown_
     slides: https://www.google.com # potential link to slides
+    poster: https://www.google.com # potential link to slides
     hub: example-hub # potential hub page to link to
+    recording: https://www.youtube.com
 - presentation:
     title: A second presentation
     event: Another conference

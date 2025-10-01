@@ -4,9 +4,13 @@
 //
 // Custom styles for additional flex alignment options.
 
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+@use "sass:map";
+@use "../variables" as vars;
+@use "../mixins/breakpoints" as mb;
+
+@each $breakpoint in map.keys(vars.$grid-breakpoints) {
+  @include mb.media-breakpoint-up($breakpoint) {
+    $infix: mb.breakpoint-infix($breakpoint, vars.$grid-breakpoints);
 
     .flex#{$infix}-row            { flex-direction: row !important; }
     .flex#{$infix}-column         { flex-direction: column !important; }

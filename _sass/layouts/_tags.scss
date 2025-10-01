@@ -1,3 +1,5 @@
+@use "../base/variable" as vars;
+
 #tags {
     @extend %page-padding;
     .bg{
@@ -8,7 +10,7 @@
         top: 105px;
         left:0%;
         height: 95px;
-        background-color: $theme-dark;
+        background-color: vars.$theme-dark;
     }
     h1.title{
         color:#fff;
@@ -17,7 +19,7 @@
     .tag-cloud{
         margin : 70px 0 30px;
         li{
-            background-color: $theme-color;
+            background-color: vars.$theme-color;
             display: inline-block;
             margin-bottom: 10px;
             margin-right : 3px;
@@ -34,7 +36,7 @@
             }
         }
         li:hover {
-            background-color: $theme-dark2!important;
+            background-color: vars.$theme-dark2!important;
         }
     }
     .tag-group{
@@ -48,7 +50,7 @@
                 position : relative;
                 margin: 25px 0;
                 .meta{
-                    color: $text-gray;
+                    color: vars.$text-gray;
                     font-size : 0.85rem;
                 }
                 .title{
@@ -68,10 +70,10 @@
             // item hover
             .post-link:hover{
                 .meta, .title{
-                    color : $theme-dark;
+                    color : vars.$theme-dark;
                 }
                 .item::before{
-                    background-color: $theme-color;
+                    background-color: vars.$theme-color;
                 }
 
             }

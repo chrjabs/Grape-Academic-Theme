@@ -1,4 +1,7 @@
 // Definition of tag style in post
+
+@use "variable" as vars;
+
 #post{
     h1, h2, h3, h4, h5, h6{
         margin : 15px 0 10px 0;
@@ -24,7 +27,7 @@
         left: 10px;
         width: 7px;
         height: 7px;
-        background-color: $text-gray;
+        background-color: vars.$text-gray;
         border-radius: 50%;
     }
     ol {

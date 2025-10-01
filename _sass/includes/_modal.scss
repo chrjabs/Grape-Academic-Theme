@@ -1,3 +1,5 @@
+@use "../base/variable" as vars;
+
 .modal{
     display: none;
     position: fixed;
@@ -23,14 +25,6 @@
         max-width:650px;
         margin: 100px auto;
         padding: 15px 5% 55px;
-        @media (max-width: 991px) {
-            width:70%;
-            margin: 80px auto;
-        }
-        @media (max-width: 576px) {
-            margin: 50px auto;
-            width:90%;
-        }
         border-radius: 20px;
         background-color: #fff;
         -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
@@ -39,13 +33,21 @@
         -ms-box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
         box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
 
+        @media (max-width: 991px) {
+            width:70%;
+            margin: 80px auto;
+        }
+        @media (max-width: 576px) {
+            margin: 50px auto;
+            width:90%;
+        }
         .close-modal{
             position: absolute;
             width:35px;
             height: 35px;
             top: -10px;
             right: -15px;
-            background-color: $theme-dark;
+            background-color: vars.$theme-dark;
             color:#fff;
             border-radius: 50%;
             text-align: center;
@@ -56,7 +58,7 @@
             }
         }
         .close-modal:hover{
-            background-color: $theme-dark2;
+            background-color: vars.$theme-dark2;
         }
         br{line-height: 2.0rem;}
         .header{

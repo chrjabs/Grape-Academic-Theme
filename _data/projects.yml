@@ -40,3 +40,9 @@
     title: Dummy project
     summary: This is a Dummy
     description:  
+    contents:
+        - title: Some content
+          image:
+            path: "https://picsum.photos/id/237/200/300"
+            alt: "An image from an external URL"
+          description: "A description **with some markdown**"

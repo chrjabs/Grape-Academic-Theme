@@ -1,26 +1,26 @@
 //Bootstrap
-@import 'bootstrap/bootstrap-grid';
+@use 'bootstrap/bootstrap-grid';
 
 // Base 
-@import 'base/variable';
-@import 'base/global';
-@import 'base/utility';
-@import 'base/highlight';
-@import 'base/bibliography';
+@use 'base/variable';
+@use 'base/global';
+@use 'base/utility';
+@use 'base/highlight';
+@use 'base/bibliography';
 
 // Layout 
-@import 'layouts/hub';
-@import 'layouts/blog';
-@import 'layouts/post';
-@import 'layouts/tags';
-@import 'layouts/portfolio';
-@import 'layouts/publications';
-@import 'layouts/presentations';
+@use 'layouts/hub';
+@use 'layouts/blog';
+@use 'layouts/post';
+@use 'layouts/tags';
+@use 'layouts/portfolio';
+@use 'layouts/publications';
+@use 'layouts/presentations';
 
 // Include 
-@import 'includes/header';
-@import 'includes/aside';
-@import 'includes/footer';
-@import 'includes/projects';
-@import 'includes/modal';
-@import 'includes/recentpubs';
+@use 'includes/header';
+@use 'includes/aside';
+@use 'includes/footer';
+@use 'includes/projects';
+@use 'includes/modal';
+@use 'includes/recentpubs';

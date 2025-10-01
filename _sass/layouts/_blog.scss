@@ -1,3 +1,5 @@
+@use "../base/variable" as vars;
+
 #blog {
     #aside{
         display:block;
@@ -24,7 +26,7 @@
         top: 105px;
         left:0%;
         height: 95px;
-        background-color: $theme-dark;
+        background-color: vars.$theme-dark;
     }
     #posts.col-md-8{
         @media (max-width: 991px) {
@@ -60,7 +62,7 @@
                         margin : 10px 0px;
                     }
                     .meta {
-                        color : $text-gray;
+                        color : vars.$text-gray;
                         font-size: 0.85rem;
                         margin-right : 10px;
                     }
@@ -72,11 +74,11 @@
                             margin-right: 3px;
                             padding: 2px 9px;
                             border-radius: 15px;
-                            color: $text-gray;
+                            color: vars.$text-gray;
                             font-size: 0.75rem;
                         }
                         .tag-sm:hover {
-                            background-color: $theme-color;
+                            background-color: vars.$theme-color;
                             color: #fff;
                         }
                     }
@@ -91,10 +93,10 @@
         .post:hover{
             .text-warp {
                 .title{
-                    color: $theme-color;
+                    color: vars.$theme-color;
                 }
                 .title::before {
-                    background-color: $theme-color;
+                    background-color: vars.$theme-color;
                 }
             }
         }
@@ -124,13 +126,13 @@
     }
 
     li.btn-rounded:hover{
-        background-color: $theme-dark;
-        border: 2px solid $theme-dark;
+        background-color: vars.$theme-dark;
+        border: 2px solid vars.$theme-dark;
         color : #fff;
     }
     .selected li{
-        background-color: $theme-dark;
-        border: 2px solid $theme-dark;
+        background-color: vars.$theme-dark;
+        border: 2px solid vars.$theme-dark;
         color : #fff;
     }
 } 

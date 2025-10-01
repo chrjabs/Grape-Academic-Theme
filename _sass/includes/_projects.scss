@@ -1,3 +1,5 @@
+@use "../base/variable" as vars;
+
 #project {
   position: relative;
   overflow: hidden;
@@ -7,7 +9,7 @@
     margin-bottom: 55px;
     p.title {
       padding-left: 10px;
-      color: $theme-dark;
+      color: vars.$theme-dark;
       font-size: 25px;
       font-weight: 600;
     }
@@ -47,7 +49,7 @@
         overflow: hidden;
         background-color: #fff;
         border-radius: 10px;
-        box-shadow: rgba($theme-dark2, 0.15) 0px 1px 5px;
+        box-shadow: rgba(vars.$theme-dark2, 0.15) 0px 1px 5px;
         .img-wrap {
           position: relative;
           overflow: hidden;
@@ -66,13 +68,13 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          background-color: $background-gray;
+          background-color: vars.$background-gray;
         }
         .text-wrap {
           padding: 20px 25px;
           // height: 180px;
           .title {
-            color: $theme-dark;
+            color: vars.$theme-dark;
             font-weight: 600;
           }
           .date {
@@ -112,7 +114,7 @@
               }
             }
             a.modal-btn i {
-              background-color: $theme-dark;
+              background-color: vars.$theme-dark;
               color: #fff;
               font-size: 0.75rem;
             }
@@ -124,7 +126,7 @@
         -ms-transform: scale(1.03);
         -o-transform: scale(1.03);
         transform: scale(1.03);
-        box-shadow: rgba($theme-dark2, 0.15) 0px 5px 15px;
+        box-shadow: rgba(vars.$theme-dark2, 0.15) 0px 5px 15px;
         .icons{
           a {
             i {
@@ -133,13 +135,13 @@
               -ms-transition-duration: 0.5s;
               -o-transition-duration: 0.5s;
               transition-duration: 0.5s;
-              background-color: $theme-color;
+              background-color: vars.$theme-color;
               color: #fff;
             }
           }
           a:hover {
             i {
-              background-color: $theme-dark;
+              background-color: vars.$theme-dark;
               color: #fff;
             }
           }

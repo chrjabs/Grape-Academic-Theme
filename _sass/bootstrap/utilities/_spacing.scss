@@ -2,12 +2,16 @@
 
 // Margin and Padding
 
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+@use "sass:map";
+@use "../variables" as vars;
+@use "../mixins/breakpoints" as mb;
+
+@each $breakpoint in map.keys(vars.$grid-breakpoints) {
+  @include mb.media-breakpoint-up($breakpoint) {
+    $infix: mb.breakpoint-infix($breakpoint, vars.$grid-breakpoints);
 
     @each $prop, $abbrev in (margin: m, padding: p) {
-      @each $size, $length in $spacers {
+      @each $size, $length in vars.$spacers {
         .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
         .#{$abbrev}t#{$infix}-#{$size},
         .#{$abbrev}y#{$infix}-#{$size} {
@@ -29,7 +33,7 @@
     }
 
     // Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
-    @each $size, $length in $spacers {
+    @each $size, $length in vars.$spacers {
       @if $size != 0 {
         .m#{$infix}-n#{$size} { margin: -$length !important; }
         .mt#{$infix}-n#{$size},

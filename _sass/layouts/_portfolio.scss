@@ -1,3 +1,5 @@
+@use "../base/variable" as vars;
+
 #portfolio {
   #about-me {
     position: relative;
@@ -40,12 +42,12 @@
           width: 35px;
           height: 35px;
           color: #fff;
-          background-color: $theme-dark;
+          background-color: vars.$theme-dark;
           line-height: 35px;
         }
         i:hover {
           background-color: #fff;
-          color: $theme-dark;
+          color: vars.$theme-dark;
         }
       }
     }
@@ -56,7 +58,7 @@
       width: 100%;
       height: calc(100% + 120px);
       top: -60px;
-      background-color: $theme-dark;
+      background-color: vars.$theme-dark;
     }
   }
   #career {
@@ -65,7 +67,7 @@
     margin-top: 55px;
     .title {
       margin-top: 15px;
-      color: $theme-dark;
+      color: vars.$theme-dark;
       font-size: 25px;
       font-weight: 600;
     }
@@ -74,7 +76,7 @@
       ul.exper-list {
         margin-top: 25px;
         margin-left: 3%;
-        border-left: 5px solid $theme-color;
+        border-left: 5px solid vars.$theme-color;
         list-style-type: none;
         li {
           animation-name: fadein;
@@ -106,7 +108,7 @@
           height: 15px;
           top: 42%;
           left: -10px;
-          background-color: $theme-color;
+          background-color: vars.$theme-color;
           border-radius: 50%;
         }
       }
@@ -151,7 +153,7 @@
           .progress-bar {
             position: absolute;
             height: 18px;
-            background-color: $theme-color;
+            background-color: vars.$theme-color;
           }
           .progress-value {
             position: absolute;
@@ -186,7 +188,7 @@
       li.interest::before {
         content: "•";
         font-size: 200%;
-        color: $theme-color;
+        color: vars.$theme-color;
         padding-right: 5px;
         vertical-align: text-top;
       }
@@ -205,7 +207,7 @@
       li.award::before {
         content: "•";
         font-size: 200%;
-        color: $theme-color;
+        color: vars.$theme-color;
         padding-right: 5px;
         vertical-align: text-top;
       }

@@ -18,6 +18,16 @@ layout: page
               [<a href="{{ presentation.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" title="Slides">Slides</a>]
             {%- endif %}
           {%- endif %}
+          {%- if presentation.poster %}
+            {% if presentation.poster contains '://' -%}
+              [<a href="{{ presentation.poster }}" class="btn btn-sm z-depth-0" role="button" title="Poster">Poster</a>]
+            {%- else -%}
+              [<a href="{{ presentation.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" title="Poster">Poster</a>]
+            {%- endif %}
+          {%- endif %}
+          {%- if presentation.recording %}
+            [<a href="{{ presentation.recording }}" class="btn btn-sm z-depth-0" role="button">Recording</a>]
+          {%- endif %}
           {%- if presentation.hub %}
             [<a href="{{ presentation.hub | relative_url }}" class="btn btn-sm z-depth-0" role="button">All Information</a>]
           {%- endif %}

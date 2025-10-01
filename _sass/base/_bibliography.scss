@@ -1,7 +1,9 @@
+@use "variable" as vars;
+
 h2.bibliography{
-    color: $text-gray;
+    color: vars.$text-gray;
     text-align: right;
-    border-top: 1px solid $divider-color;
+    border-top: 1px solid vars.$divider-color;
     padding-top: 1rem;
     margin-top: 2rem;
     margin-bottom: -2rem;
@@ -68,7 +70,7 @@ ol.bibliography{
             border: dashed 2px #ffffff;
         }
         div.abstract.hidden.open {
-            border-color: $divider-color;
+            border-color: vars.$divider-color;
         }
     }
 }

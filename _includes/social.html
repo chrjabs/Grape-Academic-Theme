@@ -95,6 +95,14 @@
 </li>
 {% endif %}
 
+{% if social.mastodon %}
+<li>
+  <a rel="me" href="{{ social.mastodon }}" target="_blank" title="Mastodon">
+    <i class="fab fa-mastodon"></i>
+  </a>
+</li>
+{% endif %}
+
 {% if social.twitter %}
 <li>
   <a href="https://twitter.com/{{ social.twitter }}" target="_blank" title="Twitter">

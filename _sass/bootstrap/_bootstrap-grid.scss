@@ -5,6 +5,18 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+@use "variables";
+@use "functions";
+
+@use "mixins/breakpoints" as mb;
+@use "mixins/grid-framework" as mgf;
+@use "mixins/grid" as mg;
+
+@use "grid";
+@use "utilities/display";
+@use "utilities/flex";
+@use "utilities/spacing";
+
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
@@ -15,15 +27,3 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
-@import "functions";
-@import "variables";
-
-@import "mixins/breakpoints";
-@import "mixins/grid-framework";
-@import "mixins/grid";
-
-@import "grid";
-@import "utilities/display";
-@import "utilities/flex";
-@import "utilities/spacing";

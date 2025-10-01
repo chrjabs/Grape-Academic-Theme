@@ -11,16 +11,24 @@
     </div>
     <div class="content">
       {% if project.image %}
+        {% if project.image.path contains '://' -%}
+        <img src="{{ project.image.path }}" alt="{{ project.image.alt }}">
+        {%- else -%}
         <img src="{{ project.image.path | prepend: '/assets/project/' | relative_url }}" alt="{{ project.image.alt }}">
+        {%- endif %}
       {% endif%}
       <div class="description">{{ project.description }}</div>
       {% for content in project.contents %}
       <div class="sub-content">
         <div class="title">{{ content.title }}</div>
         {% if content.image %}
-          <img src="{{ content.image.path | prepend: '/assets/project/' | relative_url }}" alt="{{ content.image.alt }}">
+          {% if content.image.path contains '://' -%}
+          <img src="{{ content.image.path }}" alt="{{ project.image.alt }}">
+          {%- else -%}
+          <img src="{{ content.image.path | prepend: '/assets/project/' | relative_url }}" alt="{{ project.image.alt }}">
+          {%- endif %}
         {% endif %}
-        <div class="description">{{ content.description }}</div>
+        <div class="description">{{ content.description | markdownify }}</div>
       </div>
       {% endfor %}
     </div>

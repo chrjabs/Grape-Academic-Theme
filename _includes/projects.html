@@ -9,7 +9,11 @@
         <div class="card">
           {% if project.image %}
           <div class="img-wrap">
+            {% if project.image.path contains '://' -%}
+            <img src="{{ project.image.path }}" alt="{{ project.image.alt }}">
+            {%- else -%}
             <img src="{{ project.image.path | prepend: '/assets/project/' | relative_url }}" alt="{{ project.image.alt }}">
+            {%- endif %}
           </div>
           {% endif %}
           <div class="text-wrap {% if project.image %}{% endif %}">
@@ -25,7 +29,7 @@
               {% endfor %}
               {% endif %}
             </div>
-            <div class="description">{{ project.description }}</div>
+            <div class="description">{{ project.description | markdownify }}</div>
           </div>
           <div class="icons">
             {% if project.url %}

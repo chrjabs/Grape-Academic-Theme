@@ -1,3 +1,5 @@
+@use "../base/variable" as vars;
+
 #recentpubs {
   position: relative;
   overflow: hidden;
@@ -6,7 +8,7 @@
     padding-top: 50px!important;
     margin-bottom: 55px;
     p.title {
-      color: $theme-dark;
+      color: vars.$theme-dark;
       font-size: 25px;
       font-weight: 600;
     }

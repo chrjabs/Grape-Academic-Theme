@@ -1,3 +1,5 @@
+@use "../base/variable" as vars;
+
 #publications {
     @extend %page-padding;
     .bg{
@@ -8,7 +10,7 @@
         top: 105px;
         left:0%;
         height: 95px;
-        background-color: $theme-dark;
+        background-color: vars.$theme-dark;
     }
     h1.title{
         color:#fff;

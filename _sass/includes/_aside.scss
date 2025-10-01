@@ -1,3 +1,5 @@
+@use "../base/variable" as vars;
+
 #aside{
     text-align: center;
     padding : 0px 2%;
@@ -33,7 +35,7 @@
         background: rgba(0,0,0,0.03);
     }
     .img-wrap:hover::before{
-        background: rgba($theme-color, 0.1);
+        background: rgba(vars.$theme-color, 0.1);
     }
     .title, .username  {
         font-size : 1.1rem;
@@ -43,7 +45,7 @@
         margin-bottom: 20px;
     }
     .title:hover{
-        color: $theme-color;
+        color: vars.$theme-color;
     }
     .description{
         font-size : 0.95rem;
@@ -70,7 +72,7 @@
             border : 0.5px solid rgba(0,0,0,0.1);
         }
         .proj-content:hover *{
-            color: $theme-dark;
+            color: vars.$theme-dark;
         }
     }
 }

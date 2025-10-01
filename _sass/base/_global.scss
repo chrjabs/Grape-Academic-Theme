@@ -1,3 +1,5 @@
+@use "variable" as vars;
+
 *{
 	-webkit-text-size-adjust:none;
 	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
@@ -33,7 +35,7 @@ footer, header, hgroup, menu, nav, section, main {
 	display: block;
 }
 html, body {
-	color: $text;
+	color: vars.$text;
 	height: 100%;
 }
 h1, h2, h3, h4, h5, h6{
@@ -88,7 +90,7 @@ ol, ul {
 }
 a:link, a:visited, a:active, a:hover {
 	text-decoration: none; 
-	color: $text;
+	color: vars.$text;
 }
 .container{
 	padding-top: 30px;
@@ -102,13 +104,13 @@ a:link, a:visited, a:active, a:hover {
 }
 .highlighter-rouge {
     font-size: 0.9rem;
-    color: $theme-color;
-    background-color: $theme-bright;
+    color: vars.$theme-color;
+    background-color: vars.$theme-bright;
     padding: .1em .5em;
     border-radius: 3px;
 }
 .tag {
-	background-color: $theme-dark;
+	background-color: vars.$theme-dark;
 	display: inline-block;
 	margin-bottom: 10px;
 	margin-right : 3px;
@@ -121,7 +123,7 @@ a:link, a:visited, a:active, a:hover {
 	letter-spacing: -0.03rem;
 }
 .tag:hover {
-	background-color: $theme-dark2;
+	background-color: vars.$theme-dark2;
 }
 #icons{
 	margin-top: 25px;
@@ -141,7 +143,7 @@ a:link, a:visited, a:active, a:hover {
 		text-align: center;
 	}
 	i:hover {
-		background-color: $theme-dark;
+		background-color: vars.$theme-dark;
 		color : #fff;
 	}
 }
@@ -163,18 +165,18 @@ a:link, a:visited, a:active, a:hover {
 		}
 	.return-btn:hover{ 
 		p{
-			background-color: $theme-dark;
+			background-color: vars.$theme-dark;
 			color : #fff;	
 		}
 	}
 
 }
 a.btn  {
-		color: $theme-dark;
+		color: vars.$theme-dark;
 		text-decoration: underline;
 		padding-left: 0.2rem;
 		padding-right: 0.2rem;
 		&:hover {
-				color: $theme-color;
+				color: vars.$theme-color;
 		}
 }
