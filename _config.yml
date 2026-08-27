@@ -1,27 +1,26 @@
 # Site Settings
-# Do not use trailing slash (i.e. "/Sample"). For skipping base URL, leave empty quotes ("")
-baseurl: "/Grape-Academic-Theme"
+baseurl: ""
 
 # Features Setting
 # Turn subpages on or off
-publications: True
-presentations: True
-blog: True
+publications: False
+presentations: False
+blog: False
 
 # Language of the website
 lang: en
 
 # Search engine optimization settings
-title: Grape Academic Theme
+title: Ordatun Jannat
 tagline: A jekyll theme for academic portfolios
 description: The demonstration page for the Grape Academic Theme, a jekyll theme for academic portfolios based on the Grape Theme.
-author: Christoph Jabs (chrjabs)
+author: Ordatun Jannat
 twitter:
   username: chrjabs
   card: A jekyll theme for academic portfolios
 logo: /assets/img/smile.png
 social:
-  name: Christoph Jabs
+  name: Ordatun Jannat
   links:
     - https://twitter.com/chrjabs
     - https://github.com/chrjabs
